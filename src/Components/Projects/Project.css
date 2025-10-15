@@ -98,7 +98,7 @@
         padding: 0;
     }
     .project-container{
-        grid-template-columns: 2fr 2fr ;
+        grid-template-columns: 1fr 1fr ;
         gap:é0px
     }
     .project-container img{
