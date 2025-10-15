@@ -5,9 +5,23 @@ import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 function Contact() {
-   const onSubmit = async (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+
+    const name = formData.get("name").trim();
+    const email = formData.get("email").trim();
+    const message = formData.get("message").trim();
+    const numéro = formData.get("numéro").trim();
+    if (!name || !email || !message || !numéro) {
+      alert("Please fill all the fields");
+      return;
+    }
+
+    let regx = new RegExp('^[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-_]+\\.[a-zA-Z0-9.-_]+$');
+    if (!regx.test(baliseEmail)) {
+      throw new Error('Email non valide')
+    };
 
     formData.append("access_key", "d387795e-895f-410b-8241-7c6a3e29b9ff");
 
@@ -31,7 +45,7 @@ function Contact() {
     <div id='contact' className='contact'>
       <div className="contact-title">
         <h1>Contactez moi</h1>
-       
+
       </div>
       <div className="contact-section">
         <div className="contact-left">
