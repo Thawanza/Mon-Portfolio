@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 60px;
   margin: 80px 100px;
 }
 
+/* --- TITRE --- */
 .skill-title {
   position: relative;
   margin-top: 30px;
@@ -17,7 +18,7 @@
 }
 
 .skill-title h1 {
-  padding: 0px 30px;
+  padding: 0 30px;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
@@ -30,35 +31,39 @@
   z-index: -1;
 }
 
-.skill-format {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 0px;
-  border-radius: 10px;
-  border: 2px solid white;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.skill-format h5 {
-  padding: 0px 20px;
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-}
-
+/* --- CARTES DE COMPÉTENCES --- */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 30px;
+  gap: 25px;
   margin-bottom: 80px;
   width: 100%;
 }
 
-.skills-container:hover {
+.skill-format {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* réduit l’espace interne */
+  padding: 6px 8px; /* réduit le padding vertical et horizontal */
+  border-radius: 10px;
+  border: 1.5px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.skill-format:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.skill-format h5 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* --- RESPONSIVE --- */
@@ -89,8 +94,8 @@
 
   .skill-format {
     flex-direction: column;
-    align-items: center;
-    padding: 8px;
+    gap: 4px;
+    padding: 5px;
   }
 
   .skill-format h5 {
@@ -100,7 +105,7 @@
 
 @media (max-width: 480px) {
   .skills {
-    margin: 10px 10px;
+    margin: 20px 10px;
     gap: 40px;
   }
 
@@ -109,12 +114,13 @@
   }
 
   .skills-container {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
   .skill-format {
-    padding: 6px;
+    padding: 5px;
+    gap: 3px;
   }
 
   .skill-format h5 {
