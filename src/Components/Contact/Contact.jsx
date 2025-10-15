@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import Swal from 'sweetalert2'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
@@ -17,14 +18,22 @@ function Contact() {
 
     // Vérification des champs vides
     if (!name || !email || !message || !numero) {
-      alert("Veuillez remplir tous les champs !");
+     Swal.fire({
+        icon: 'warning',
+        title: 'Champs manquants',
+        text: 'Veuillez remplir tous les champs avant d’envoyer 😊',
+      });
       return;
     }
 
     // Validation de l'email
     const regx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-_]+\.[a-zA-Z]{2,}$/;
     if (!regx.test(email)) {
-      alert("Adresse email invalide !");
+      Swal.fire({
+        icon: 'error',
+        title: 'Email invalide',
+        text: 'Veuillez entrer une adresse email valide ✉️',
+      });
       return;
     }
 
