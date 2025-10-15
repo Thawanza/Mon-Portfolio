@@ -19,7 +19,7 @@ function Contact() {
     }
 
     let regx = new RegExp('^[a-zA-Z0-9.-_]+@[a-zA-Z0-9.-_]+\\.[a-zA-Z0-9.-_]+$');
-    if (!regx.test(baliseEmail)) {
+    if (!regx.test(email)) {
       throw new Error('Email non valide')
     };
 
