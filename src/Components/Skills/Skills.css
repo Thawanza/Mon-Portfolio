@@ -69,7 +69,7 @@
 /* --- RESPONSIVE --- */
 @media (max-width: 1024px) {
   .skills {
-    margin: 60px 60px;
+    margin: 20px 20px;
   }
   .skill-title h1 {
     font-size: 32px;
