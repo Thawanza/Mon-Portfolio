@@ -73,7 +73,7 @@
 @media (max-width:768px) {
     .hero-text{
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
     }
     .hero img{
         margin-bottom: 150px;
