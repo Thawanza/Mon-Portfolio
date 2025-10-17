@@ -31,8 +31,25 @@ function Contact() {
     if (!regx.test(email)) {
       Swal.fire({
         icon: 'error',
-        title: 'Email invalide',
-        text: 'Veuillez entrer une adresse email valide ✉️',
+  title: 'Email invalide',
+  text: 'Veuillez entrer une adresse email valide ✉️',
+  confirmButtonColor: '#d33',
+  confirmButtonText: 'Corriger',
+  background: '#fff',
+  color: '#333',
+  // ✅ largeur auto qui s’adapte parfaitement au mobile
+  width: window.innerWidth < 480 ? '85%' : '400px',
+  padding: '1.5em',
+  // ✅ fond sombre et flou
+  backdrop: `
+    rgba(0, 0, 0, 0.45)
+    left top
+    no-repeat
+  `,
+  customClass: {
+    popup: 'swal-custom-popup',
+    title: 'swal-custom-title',
+    confirmButton: 'swal-custom-btn',},
       });
       return;
     }
