@@ -119,9 +119,12 @@
     }
     .about-achievement{
         gap: 30px;
+
         
 
     }
-
+    .about-achievement p{
+        font-size: 10px;
+    }
     
 }
