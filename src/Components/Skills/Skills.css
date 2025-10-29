@@ -92,6 +92,7 @@
   .skills-container {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 20px;
+    margin: 20px 20px;
   }
 
   .skill-format {
