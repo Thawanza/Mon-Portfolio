@@ -17,9 +17,9 @@ function About() {
                             Je travaille avec des technologies telles que React, React Native, Node.js, Express, et MongoDB pour concevoir des solutions propres, efficaces et conviviales.
 
                         </p>
-<p>
-                       
-                       
+                        <p>
+
+
                             Forte d’une expérience à la fois en frontend et en backend, j’aime résoudre des problèmes concrets grâce au code et donner vie aux idées.
                             Je suis toujours motivée à apprendre, collaborer et évoluer dans ce monde technologique en constante évolution.
                         </p>
