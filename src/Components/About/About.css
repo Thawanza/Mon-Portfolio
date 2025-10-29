@@ -95,9 +95,9 @@
 
 @media (max-width:768px) {
     .about{
-        gap:80px;
-        margin:50px 70px;
-        
+         gap: 60px;
+        margin: 40px 20px; 
+        align-items: center; 
     }
     .about-title img{
          width: 130px;
