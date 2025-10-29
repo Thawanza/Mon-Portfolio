@@ -43,7 +43,7 @@ Ce projet m’a permis de comprendre :
         w_img: reactnative,
         w_desc: `Projet réalisé en suivant un tutoriel YouTube dans le cadre d'une formation pour apprendre à développer une application mobile full-stack avec React Native, Expo et Firebase. 
 
-*Elle permet aux utilisateurs de: 
+Elle permet aux utilisateurs de: 
 Ajouter et consulter des profils d’animaux à adopter ,
 
 créer un compte via Firebase Auth ,
@@ -106,7 +106,7 @@ Java, Android Studio, MySql.`
     {
         w_no: 8,
         w_name: "Application mobile pour le calcul de la moyenne L3",
-        w_img:calculatrice,
+        w_img: calculatrice,
         w_desc: `Projet académique visant à faciliter le calcul des moyennes semestrielles et annuelles pour les étudiants en Licence 3.
 
 Développée avec Java, l’application permet aux étudiants de saisir leurs notes par module, en tenant compte des coefficients, afin d’obtenir automatiquement leur moyenne globale.  

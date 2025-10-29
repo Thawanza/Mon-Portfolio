@@ -39,7 +39,7 @@
 }
 
 .project-card {
-  
+  border: 2px solid #c1c2c9;
   border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
@@ -112,7 +112,8 @@
   .project-container {
     grid-template-columns: 1fr;
     /* ✅ une seule carte par ligne sur mobile */
-    gap: 25px;
+    gap: 35px;
+    margin : 20px 20px;
   }
 
   .project-title h1 {
