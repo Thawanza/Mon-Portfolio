@@ -18,9 +18,8 @@
 
 .project-title h1 {
   padding: 0px 30px;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .project-title img {
@@ -111,7 +110,8 @@
   }
 
   .project-container {
-    grid-template-columns: 1fr; /* ✅ une seule carte par ligne sur mobile */
+    grid-template-columns: 1fr;
+    /* ✅ une seule carte par ligne sur mobile */
     gap: 25px;
   }
 
@@ -131,8 +131,8 @@
   }
 
   .project-title h1 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 50px;
+    padding: 0;
   }
 
   .project-container {

@@ -18,10 +18,9 @@
 }
 
 .skill-title h1 {
-  padding: 0 30px;
-  font-size: 40px;
+  padding: 0px 30px;
+  font-size: 50px;
   font-weight: 600;
-  text-align: center;
 }
 
 .skill-title img {
@@ -45,8 +44,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px; /* réduit l’espace interne */
-  padding: 6px 8px; /* réduit le padding vertical et horizontal */
+  gap: 8px;
+  /* réduit l’espace interne */
+  padding: 6px 8px;
+  /* réduit le padding vertical et horizontal */
   border-radius: 10px;
   border: 1.5px solid white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -71,6 +72,7 @@
   .skills {
     margin: 20px 20px;
   }
+
   .skill-title h1 {
     font-size: 32px;
   }
@@ -110,7 +112,8 @@
   }
 
   .skill-title h1 {
-    font-size: 24px;
+    font-size: 50px;
+    padding: 0;
   }
 
   .skills-container {
