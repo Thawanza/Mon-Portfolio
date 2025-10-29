@@ -113,7 +113,7 @@
     grid-template-columns: 1fr;
     /* ✅ une seule carte par ligne sur mobile */
     gap: 35px;
-    margin : 20px 20px;
+    margin : 20px 30px;
   }
 
   .project-title h1 {
