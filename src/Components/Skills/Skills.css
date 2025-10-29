@@ -121,7 +121,8 @@
   .skills-container {
     grid-template-columns: 1fr;
     gap: 15px;
-    margin: 20px 30px;
+     margin: 20px 30px; 
+    padding: 0 15px;
   }
 
   .skill-format {
