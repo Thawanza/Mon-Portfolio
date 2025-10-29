@@ -104,14 +104,14 @@
          right: -20px;
     }
     .about-title h1{
-        font-size: 50px;
+        font-size: 40px;
         padding: 0;
     }
     .about-sections{
         flex-direction: row;
     }
     .about-para{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 32px;
     }
     .about-achievements{
