@@ -82,7 +82,6 @@ function Contact() {
     <div id='contact' className='contact'>
       <div className="contact-title">
         <h1>Contactez-moi</h1>
-        <img src={theme_pattern} alt="theme pattern" />
       </div>
 
       <div className="contact-section">
