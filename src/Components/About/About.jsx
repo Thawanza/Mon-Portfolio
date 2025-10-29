@@ -16,8 +16,8 @@ function About() {
                             Bonjour, je suis Thawanza Boulanouar, une développeuse Full Stack passionnée, spécialisée dans la création d’applications web et mobiles modernes et évolutives.
                             Je travaille avec des technologies telles que React, React Native, Node.js, Express, et MongoDB pour concevoir des solutions propres, efficaces et conviviales.
 
-
-
+                        </p>
+<p>
                        
                        
                             Forte d’une expérience à la fois en frontend et en backend, j’aime résoudre des problèmes concrets grâce au code et donner vie aux idées.
