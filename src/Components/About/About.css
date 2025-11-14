@@ -11,7 +11,7 @@
 .about-title {
     position: relative;
     background: linear-gradient(135deg, #e778b5 20%, #0e22d6 100%);
-     background-clip: text;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -49,7 +49,7 @@
     font-size: 20px;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
 }
 
 
@@ -60,14 +60,18 @@
 
 }
 
+
+.about-achievement li {
+    font-size: 17px;
+}
 .about-achievement {
     box-shadow: 0px 8px 25px rgba(214, 7, 121, 0.1);
     border-radius: 10px;
     min-width: 250px;
     max-width: 300px;
-    height: 130px;
+    height: 180px;
     padding: 20px;
-    
+
     transition: transform 0.3s ease;
 
 }
@@ -80,13 +84,14 @@
 .about-achievement p {
     font-size: 25px;
     font-weight: 800;
-    background:  linear-gradient(135deg, #e778b5 20%, #0e22d6 100%);
+    background: linear-gradient(135deg, #e778b5 20%, #0e22d6 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.about-achievement h5{
-    font-size: 20px;
+
+.about-achievement h6 {
+    font-size: 18px;
 }
 
 .about-achievement hr {
@@ -94,41 +99,49 @@
 }
 
 @media (max-width:768px) {
-    .about{
-         gap: 60px;
-        margin: 40px 20px; 
-        align-items: center; 
+    .about {
+        gap: 60px;
+        margin: 40px 20px;
+        align-items: center;
     }
-    .about-title img{
-         width: 130px;
-         right: -20px;
+
+    .about-title img {
+        width: 130px;
+        right: -20px;
     }
-    .about-title h1{
+
+    .about-title h1 {
         font-size: 40px;
         padding: 0;
     }
-    .about-sections{
+
+    .about-sections {
         flex-direction: column;
-        align-items: center;    
+        align-items: center;
         gap: 40px;
     }
-    .about-para{
+
+    .about-para {
         font-size: 23px;
         line-height: 32px;
-         width: 85%;
+        width: 85%;
 
     }
-    .about-achievements{
+
+    .about-achievements {
         flex-direction: column;
     }
-    .about-achievement{
+
+    .about-achievement {
         gap: 30px;
-
-        
-
     }
-    .about-achievement h5{
+
+    .about-achievement li {
         font-size: 17px;
     }
-    
+
+    .about-achievement h6 {
+        font-size: 17px;
+    }
+
 }

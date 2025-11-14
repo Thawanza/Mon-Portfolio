@@ -27,20 +27,31 @@ function About() {
                     <div className="about-achievements">
                         <div className="about-achievement">
                             <p>Langues</p>
-                            <hr style={{ width: "33%" }} />
-                            <h5>Francais</h5>
-                            <h5>Anglais</h5>
-                            <h5>Arabe</h5>
-                            <h5>Kabyle</h5>
+                            <hr style={{ width: "37%" }} />
+                            <li>Francais</li>
+                            <li>Anglais</li>
+                            <li>Arabe</li>
+                            <li>Kabyle</li>
 
                         </div>
                         <div className="about-achievement">
                             <p>Education</p>
-                            <hr style={{ width: "40%" }} />
-                            <h5>Master’s Degree in Software Engineering</h5>
-                            <h5>University of Béjaïa</h5>
-                            <h5>2023 - 2025</h5>
+                            <hr style={{ width: "43%" }} />
+                            <li>Master’s Degree in Software Engineering</li>
+                            <h6>University of Béjaïa</h6>
+                            <h6>2023 - 2025</h6>
                         </div>
+                        <div className="about-achievement">
+                            <p className="section-title">Trainings & Courses</p>
+                            <hr style={{ width: "76%" }} />
+                            <ul className="courses-list">
+                                <li>Développeur Application Android (École Amis de Java)</li>
+                                <li>Développeur Java (École Java)</li>
+                                <li>Apprenez à programmer avec JavaScript (OpenClassrooms)</li>
+                                <li>Passez au Full Stack avec Node.js, Express et MongoDB (OpenClassrooms)</li>
+                            </ul>
+                        </div>
+
 
 
 
