@@ -111,7 +111,6 @@
 
   .project-container {
     grid-template-columns: 1fr;
-    /* ✅ une seule carte par ligne sur mobile */
     gap: 35px;
     margin : 20px 30px;
   }
