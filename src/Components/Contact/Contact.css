@@ -140,17 +140,24 @@
     .contact-section {
         flex-direction: column;
     }
+    .contact-left  h2{
+        font-size: 23px;
+    }
 
     .contact-left h1 {
         font-size: 50px;
     }
 
     .contact-left p {
-        font-size: 18px;
+        font-size: 21px;
     }
 
     .contact-detail {
         gap: 20px;
+    }
+
+    .contact-detail p {
+        font-size: 23px;
     }
 
     .contact-detail img {
@@ -158,7 +165,7 @@
     }
 
     .contact-right label {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .contact-right input {
