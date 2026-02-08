@@ -1,8 +1,15 @@
 .navbar {
+    position: fixed;
     display: flex;
+    top: 0;
+    
+    width: 100%;
+
     align-items: center;
     justify-content: space-between;
-    margin: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 50px;
+    z-index: 1000;
 }
 
 .name {
@@ -28,6 +35,7 @@
     margin-top: 15px;
     text-align: center;
     width: 100%;
+    margin-right: 50px;
 }
 
 .nav-downloadcv:hover {
