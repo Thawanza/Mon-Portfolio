@@ -108,7 +108,7 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background: linear-gradient(135deg, #e778b5 20%, #0e22d6 100%);
+        background: linear-gradient(135deg, #f7f5f6 20%);
         width: 350px;
         height: 100%;
         z-index: 2;
@@ -116,6 +116,13 @@
         right: -350px;
 
     }
+
+    .anchor-link {
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+}
+
+
 
     .nav-menu li {
         font-size: 30px;
