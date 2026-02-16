@@ -73,6 +73,7 @@
 
 .nav-mob-close {
     display: none;
+    background-color: black;
 }
 
 .nav-mob-open {
