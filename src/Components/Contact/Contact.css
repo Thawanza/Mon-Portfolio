@@ -40,7 +40,7 @@
 }
 
 .contact-left {
-    flex:1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -72,7 +72,7 @@
 }
 
 .contact-right {
-    flex: 1 ;
+    flex: 1;
     max-width: 600px;
     width: 100%;
     display: flex;
@@ -157,7 +157,15 @@
         font-size: 23px;
     }
 
+
+
+    .contact-left {
+        width: 100%;
+    }
+
     .contact-left p {
+        width: 100%;
+        max-width: 100%;
         font-size: 23px;
         margin-top: 10px;
     }
