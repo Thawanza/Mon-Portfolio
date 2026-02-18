@@ -1,10 +1,9 @@
+/* --- Navbar générale --- */
 .navbar {
     position: fixed;
     display: flex;
     top: 0;
-    
     width: 100%;
-
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.8);
@@ -17,12 +16,12 @@
     font-weight: 900;
     font-style: italic;
     background: linear-gradient(135deg, #e778b5 20%, #0e22d6 100%);
-
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+/* Menu horizontal */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -30,34 +29,6 @@
     gap: 60px;
     font-size: 20px;
 }
-
-.nav-downloadcv {
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
-    margin-right: 50px;
-}
-
-.nav-downloadcv:hover {
- 
-  transform: translateY(-2px);
-}
-.nav-downloadcv img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;}
- .btn-cv {
-     display: inline-block;
-     background: linear-gradient(135deg, #dd73ad 20%, #9ca2ec 100%);
-     color: #fff;
-     padding: 10px 20px;
-     border-radius: 8px;
-     text-decoration: none;
-     font-weight: bold;
-     transition: all 0.3s ease-in-out;
-     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
- }
-
 
 .nav-menu li {
     display: flex;
@@ -71,87 +42,121 @@
     color: white;
 }
 
-.nav-mob-close {
+.nav-downloadcv {
+    margin-top: 15px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.nav-downloadcv img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.btn-cv {
+    display: inline-block;
+    background: linear-gradient(135deg, #dd73ad 20%, #9ca2ec 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.btn-cv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
+}
+
+/* Menu mobile burger */
+.nav-mob-open, .nav-mob-close {
     display: none;
 }
 
-.nav-mob-open {
-    display: none;
-}
-
-@media (max-width:768px) {
-    .navbar {
-        
-    }
-
-    .nav-connect {
-        display: none;
-    }
+/* --- Responsive 768px et moins --- */
+@media (max-width: 768px) {
 
     .nav-mob-open {
         display: block;
         position: fixed;
-        right: 30px;
+        top: 25px;
+        right: 20px;
+        z-index: 1002;
+        cursor: pointer;
     }
 
     .nav-mob-close {
         display: block;
-        position: relative;
-        top: 30px;
-        left: 29px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
         width: 30px;
+        cursor: pointer;
     }
 
     .nav-menu {
         position: fixed;
-        flex-direction: column;
-        align-items: start;
         top: 0;
+        right: -350px; /* caché par défaut */
+        width: 80vw;
+        max-width: 350px;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 30px;
         background: linear-gradient(135deg, #f7f5f6 20%);
-        width: 350px;
-        height: 100%;
-        z-index: 2;
-        transition: right 0.5s;
-        right: -350px;
+        z-index: 1001;
+        padding-top: 80px;
+        transition: right 0.5s ease-in-out;
+    }
 
+    .nav-menu li {
+        font-size: 24px;
+        padding-left: 20px;
+        flex-direction: row;
+        gap: 15px;
     }
 
     .anchor-link {
-    text-decoration: none;
-    color: rgb(1, 1, 1);
-}
-
-
-
-    .nav-menu li {
-        font-size: 30px;
-        padding-left: 100px;
-        flex-direction: row;
-        gap: 20px
+        color: #000;
     }
 
     .nav-downloadcv {
-        margin-top: 15px;
-        text-align: center;
+        margin: 20px;
     }
 
     .btn-cv {
-        display: inline-block;
         background: linear-gradient(135deg, #007bff, #00d4ff);
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
     }
 
     .btn-cv:hover {
         background: linear-gradient(135deg, #0056b3, #00aaff);
-        transform: translateY(-2px);
-        box-shadow: 0 6px 14px rgba(0, 123, 255, 0.5);
+    }
+}
+
+/* --- Très petits écrans (<480px) --- */
+@media (max-width: 480px) {
+    .nav-menu {
+        width: 90vw;
+        right: -90vw;
+        padding-top: 60px;
     }
 
+    .nav-menu li {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    .nav-mob-open {
+        top: 20px;
+        right: 15px;
+    }
+
+    .nav-mob-close {
+        top: 15px;
+        left: 15px;
+    }
 }

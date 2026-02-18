@@ -1,3 +1,4 @@
+/* --- Container principal --- */
 .about {
     display: flex;
     flex-direction: column;
@@ -5,9 +6,9 @@
     justify-content: center;
     gap: 80px;
     margin: 80px 170px;
-
 }
 
+/* --- Titre --- */
 .about-title {
     position: relative;
     background: linear-gradient(135deg, #e778b5 20%, #0e22d6 100%);
@@ -20,7 +21,6 @@
     padding: 0px 10px;
     font-size: 50px;
     font-weight: 600;
-
 }
 
 .about-title img {
@@ -30,6 +30,7 @@
     z-index: -1;
 }
 
+/* --- Sections internes --- */
 .about-sections {
     display: flex;
     gap: 80px;
@@ -42,6 +43,7 @@
     align-items: center;
 }
 
+/* --- Paragraphes --- */
 .about-para {
     display: flex;
     flex-direction: column;
@@ -49,21 +51,15 @@
     font-size: 20px;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
-
+/* --- Achievements / Cartes --- */
 .about-achievements {
     display: flex;
     flex-direction: row;
     gap: 20px;
-
 }
 
-
-.about-achievement li {
-    font-size: 17px;
-}
 .about-achievement {
     box-shadow: 0px 8px 25px rgba(214, 7, 121, 0.1);
     border-radius: 10px;
@@ -71,14 +67,11 @@
     max-width: 300px;
     height: 180px;
     padding: 20px;
-
     transition: transform 0.3s ease;
-
 }
 
-.about-achievements :hover {
+.about-achievements:hover .about-achievement {
     transform: scale(1.05);
-
 }
 
 .about-achievement p {
@@ -90,6 +83,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.about-achievement li {
+    font-size: 17px;
+}
+
 .about-achievement h6 {
     font-size: 18px;
 }
@@ -98,16 +95,34 @@
     margin-bottom: 10px;
 }
 
-@media (max-width:768px) {
+/* --- Liste de formations --- */
+.courses-list {
+    padding-left: 15px;
+    margin: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .about {
+        margin: 60px 40px;
+        gap: 60px;
+    }
+
+    .about-title h1 {
+        font-size: 45px;
+    }
+
+    .about-achievement {
+        min-width: 220px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
     .about {
         gap: 60px;
         margin: 40px 20px;
         align-items: center;
-    }
-
-    .about-title img {
-        width: 130px;
-        right: -20px;
     }
 
     .about-title h1 {
@@ -122,26 +137,57 @@
     }
 
     .about-para {
-        font-size: 23px;
-        line-height: 32px;
-        width: 85%;
-
+        font-size: 18px;
+        line-height: 28px;
+        width: 90%;
     }
 
     .about-achievements {
         flex-direction: column;
+        align-items: center;
     }
 
     .about-achievement {
-        gap: 30px;
+        gap: 25px;
+        width: 100%;
+        max-width: 300px;
     }
 
     .about-achievement li {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .about-achievement h6 {
-        font-size: 22px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        margin: 20px 15px;
+        gap: 40px;
     }
 
+    .about-title h1 {
+        font-size: 32px;
+    }
+
+    .about-para {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about-achievement {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .about-achievement li {
+        font-size: 16px;
+    }
+
+    .about-achievement h6 {
+        font-size: 16px;
+    }
 }
