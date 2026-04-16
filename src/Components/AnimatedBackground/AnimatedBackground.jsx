@@ -2,7 +2,7 @@ import React from "react";
 import "./AnimatedBackground.css";
 
 function AnimatedBackground() {
-  const balls = Array.from({ length: 40 }); // 🔥 40 petites boules
+  const balls = Array.from({ length: 40 });
 
   return (
     <div className="animated-bg">
@@ -11,13 +11,11 @@ function AnimatedBackground() {
           key={i}
           className="ball"
           style={{
-            width: `${Math.random() * 15 + 5}px`, // entre 5 et 20px
+            width: `${Math.random() * 15 + 5}px`,
             height: `${Math.random() * 15 + 5}px`,
             backgroundColor: getRandomColor(),
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
-            animationDuration: `${6 + Math.random() * 8}s`,
-            animationDelay: `${Math.random() * 5}s`,
           }}
         />
       ))}
@@ -25,7 +23,6 @@ function AnimatedBackground() {
   );
 }
 
-// 🎨 Génère des couleurs aléatoires pastel
 function getRandomColor() {
   const colors = [
     "#ff6ec7",

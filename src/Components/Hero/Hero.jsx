@@ -1,49 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import './Hero.css'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import image from '../../assets/image.jpg'
+import React from 'react';
+import './Hero.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Hero() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    const timer=setTimeout(() => 
-      setMounted(true),
-    200);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div id='home' className='hero'>
-      <div className='hero-text'> 
-        <h1>Je suis Thawanza Boulanouar</h1>
+    <section id='hero' className='hero'>
+      <div className="hero-overlay"></div>
 
-        {/* Avatar animé */}
-        <div className="avatar-container">
-          <div className="outer-ring"></div>
-          <div className={`inner-ring ${mounted ? 'scale-in' : ''}`}></div>
-          <div className="avatar-image">
-            <img src={image} alt="Avatar Thawanza" />
-          </div>
-        </div>
-      </div>
+      <div className='hero-content fade-in'>
+        <h1 className='slide-down'>Offrez le meilleur départ à votre enfant</h1>
 
-      <div className='hero-description'>
-        <p>
-          Je suis récemment diplômée. Développeuse Full-Stack passionnée par les technologies, 
-          je conçois des sites web et des applications modernes.
+        <p className='slide-up'>
+          Un environnement bienveillant où chaque enfant grandit à son rythme,
+          développe sa curiosité et s’épanouit en toute sécurité.
         </p>
-      </div>
 
-      <div className='hero-action'>
-        <div className='hero-connect'>
-          <AnchorLink className='anchor-link' offset={50} href='#contact'>
+        <div className='hero-action fade-in'>
+          <AnchorLink className='hero-btn primary' offset={50} href='#contact'>
             Contactez-moi
           </AnchorLink>
+          <button className='hero-btn secondary'>
+            Découvrir
+          </button>
         </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
 
-export default Hero
+export default Hero;

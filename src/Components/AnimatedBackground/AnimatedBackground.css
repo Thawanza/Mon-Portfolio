@@ -14,7 +14,7 @@
   position: absolute;
   border-radius: 50%;
   opacity: 0.8;
-  animation: float infinite ease-in-out;
+  /* animation: float infinite ease-in-out; */
 }
 
 /* Animation des boules */

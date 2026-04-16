@@ -5,6 +5,9 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 import mail_icon from '../../assets/mail_icon.svg'
+import facebook from '../../assets/facebook.png'
+import instagram from '../../assets/instagram.png'
+
 
 function Contact() {
   const onSubmit = async (event) => {
@@ -81,13 +84,13 @@ function Contact() {
   return (
     <div id='contact' className='contact'>
       <div className="contact-title">
-        <h1>Contactez-moi</h1>
+        <h1>Inscrire votre enfant</h1>
       </div>
 
       <div className="contact-section">
         {/* Partie gauche */}
         <div className="contact-left">
-          <h2>Mes coordonnées</h2>
+          <h2>Nos coordonnées</h2>
           <p>
             Je suis disponible pour de nouveaux projets. 
             N'hésitez pas à me contacter pour collaborer ou échanger sur des opportunités.
@@ -106,6 +109,15 @@ function Contact() {
               <img src={location_icon} alt='location' />
               <p>Aït Idriss, Taskriout, Béjaïa</p>
             </div>
+             <div className="contact-detail">
+   <img src={facebook} alt='facebook' />
+   <p></p>
+ </div>
+  <div className="contact-detail">
+    <img src={instagram} alt='instagram' />
+    <p></p>
+    </div>
+
           </div>
         </div>
 
